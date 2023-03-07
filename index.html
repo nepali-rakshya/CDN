@@ -11,18 +11,24 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <style>
+      .container {
+        background: rgb(60, 171, 223);
+        color: white;
+      }
+
+      .col {
+        /* padding: 0.6em; */
+      }
+    </style>
   </head>
   <body>
-    <!-- <div class="container-fluid border">Container</div> -->
-
-    <div class="container-sm border">100% wide until small breakpoint</div>
-    <div class="container-md border">100% wide until medium breakpoint</div>
-    <div class="container-lg border">100% wide until large breakpoint</div>
-    <div class="container-xl border">
-      100% wide until extra large breakpoint
-    </div>
-    <div class="container-xxl border">
-      100% wide until extra extra large breakpoint
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 border text-center">Column</div>
+        <div class="col-md-4 border text-center">Column</div>
+        <div class="col-md-2 border text-center">Column</div>
+      </div>
     </div>
 
     <script
